@@ -10,7 +10,7 @@ export const Menu = (props) => {
   useEffect(() => {
     const pegaDados = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/generos');
+        const response = await axios.get('https://moviefy-backend-lsy1.onrender.com/generos');
         let dados = Object.values(response.data).slice(1);
         dados = dados.filter((item, index) => index !== 1);
         setListaGeneros(dados);
@@ -47,7 +47,7 @@ export const Menu = (props) => {
     }
 
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/generos/${generos}`);
+      const response = await axios.get(`https://moviefy-backend-lsy1.onrender.com/generos/${generos}`);
       const dados = Object.values(response.data);
       setListaGenero(dados);
     } catch (error) {

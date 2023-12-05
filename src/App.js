@@ -34,8 +34,8 @@ function App() {
       }
     };
     axios
-      .get("http://127.0.0.1:8000", options)
-      //.get("https://moviefy-backend.onrender.com")
+      // .get("http://127.0.0.1:8000", options)
+      .get("https://moviefy-backend-lsy1.onrender.com", options)
       .then((res) => setFilmes(res.data))
       .catch((err) => console.log(err));
   };

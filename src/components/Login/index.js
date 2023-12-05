@@ -7,7 +7,7 @@ import "./index.css";
 
 async function loginUser(username, password){
   axios
-  .post('http://127.0.0.1:8000/token/', {
+  .post('https://moviefy-backend-lsy1.onrender.com/token/', {
     "username": username,
     "password": password
   })

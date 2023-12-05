@@ -18,7 +18,7 @@ export default function Favoritos() {
   };
   const carregaMeusFilmes = () =>{
     axios
-      .get("http://127.0.0.1:8000/filmes", options)
+      .get("https://moviefy-backend-lsy1.onrender.com/filmes", options)
       // .get("https://moviefy-backend.onrender.com/filmes")
       .then((res) => setFilmes(res.data));
     }

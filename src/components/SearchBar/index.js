@@ -11,7 +11,7 @@ export const SearchBar = (props) => {
         value.preventDefault();
         axios
         //.get("https://moviefy-backend.onrender.com/title/" + input);
-        .get("http://127.0.0.1:8000/title/" + input)
+        .get("https://moviefy-backend-lsy1.onrender.com/title/" + input)
         .then((res) => {
             props.funcao(res.data);
             console.log(res.data);

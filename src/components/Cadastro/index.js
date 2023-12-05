@@ -17,14 +17,14 @@ export default function Cadastro (){
         setEmail(email); 
        
         axios
-        .post("http:///127.0.0.1:8000/api/users/", {
+        .post("https://moviefy-backend-lsy1.onrender.com/api/users/", {
             "username": user,
             "password": senha,
             "email": email
           })
             .then( async ()=>{
                 await axios
-                .post('http://127.0.0.1:8000/token/', {
+                .post('https://moviefy-backend-lsy1.onrender.com/token/', {
                     "username": user,
                     "password": senha
                   })

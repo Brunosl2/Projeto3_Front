@@ -16,7 +16,7 @@ export default function Curtir(props) {
     const FavoritarFilme = async () => {
 
         await axios
-          .post("http://127.0.0.1:8000/", {id:props.index}, options)
+          .post("https://moviefy-backend-lsy1.onrender.com/", {id:props.index}, options)
         //   .post("https://moviefy-backend.onrender.com/", {id:props.index})
           .then((response) => {
             console.log(response.data);

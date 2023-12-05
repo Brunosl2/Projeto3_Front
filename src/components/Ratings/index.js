@@ -26,7 +26,7 @@ export default function StarRating(props) {
     console.log(props.id, "ID DO LIKE");
 
         await axios
-          .post("http://127.0.0.1:8000/filmes/ratings/" + props.id + "/" + nota + "/",{id:props.id, nota:nota})
+          .post("https://moviefy-backend-lsy1.onrender.com/filmes/ratings/" + props.id + "/" + nota + "/",{id:props.id, nota:nota})
         //   .uptade("https://moviefy-backend.onrender.com/filmes/ratings/", {id:props.index})
           .then((response) => {
             console.log(response.data);            
